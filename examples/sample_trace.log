@@ -1,0 +1,110 @@
+# Sample VM Execution Trace
+
+This is a sanitized trace showing the VM executing a token generation function.
+
+```
+1	1	28	LOAD_STRING	#0	1	val=""
+2	1	31	CREATE_FN	371	1	size=369
+3	1	402	STORE_FRAME	3	0	val=[vm#369]
+4	1	405	LOAD_STRING	#0	1	val=""
+5	1	408	CREATE_FN	61	1	size=59
+6	1	469	STORE_FRAME	4	0	val=[vm#59]
+7	1	472	LOAD_STRING	#0	1	val=""
+8	1	475	CREATE_FN	28	1	size=26
+9	1	503	STORE_FRAME	5	0	val=[vm#26]
+10	1	506	LOAD_STRING	#0	1	val=""
+11	1	509	CREATE_FN	70	1	size=68
+12	1	579	STORE_FRAME	6	0	val=[vm#68]
+13	1	582	LOAD_STRING	#0	1	val=""
+14	1	585	CREATE_FN	112	1	size=110
+15	1	697	STORE_FRAME	7	0	val=[vm#110]
+16	1	700	LOAD_STRING	#0	1	val=""
+17	1	703	CREATE_FN	374	1	size=372
+18	1	1077	STORE_FRAME	8	0	val=[vm#372]
+19	1	1080	LOAD_STRING	#0	1	val=""
+20	1	1083	CREATE_FN	252	1	size=250
+21	1	1335	STORE_FRAME	9	0	val=[vm#250]
+22	1	1338	LOAD_STRING	#0	1	val=""
+23	1	1341	CREATE_FN	194	1	size=192
+24	1	1535	STORE_FRAME	10	0	val=[vm#192]
+25	1	1538	LOAD_STRING	#0	1	val=""
+26	1	1541	CREATE_FN	75	1	size=73
+27	1	1616	STORE_FRAME	11	0	val=[vm#73]
+28	1	1619	LOAD_STRING	#0	1	val=""
+29	1	1622	CREATE_FN	620	1	size=618
+30	1	2242	STORE_FRAME	12	0	val=[vm#618]
+31	1	2245	LOAD_STRING	#0	1	val=""
+32	1	2248	CREATE_FN	569	1	size=567
+33	1	2817	STORE_FRAME	13	0	val=[vm#567]
+34	1	2820	LOAD_STRING	#0	1	val=""
+35	1	2823	CREATE_FN	160	1	size=158
+36	1	2983	STORE_FRAME	14	0	val=[vm#158]
+37	1	2986	LOAD_STRING	#0	1	val=""
+38	1	2989	CREATE_FN	20	1	size=18
+39	1	3009	STORE_FRAME	15	0	val=[vm#18]
+40	1	3012	LOAD_STRING	#0	1	val=""
+41	1	3015	CREATE_FN	147	1	size=145
+42	1	3162	STORE_FRAME	16	0	val=[vm#145]
+43	1	3165	LOAD_STRING	#0	1	val=""
+44	1	3168	CREATE_FN	37	1	size=35
+45	1	3205	STORE_FRAME	17	0	val=[vm#35]
+46	1	3208	LOAD_GLOBAL		1	val={...}
+47	1	3209	STORE_FRAME	18	0	val={...}
+48	1	3212	LOAD_LOCAL	18	1	val={...}
+49	1	3215	LOAD_STRING	#1	2	val="mnsInner"
+50	1	3218	LOAD_OBJECT		2	
+51	1	3219	STORE_PROPERTY_BY_STRING	#1	1	key="mnsInner"
+52	1	3222	LOAD_LOCAL	18	1	val={...}
+53	1	3225	LOAD_STRING	#2	2	val="__mnsModule"
+54	1	3228	LOAD_OBJECT		2	
+55	1	3229	LOAD_STRING	#3	3	val="load"
+56	1	3232	PUSH_TRUE		4	
+57	1	3233	STORE_PROPERTY_BY_STRING	#3	3	key="load"
+58	1	3236	STORE_PROPERTY_BY_STRING	#2	1	key="__mnsModule"
+59	1	3239	LOAD_LOCAL	18	1	val={...}
+60	1	3242	LOAD_STRING	#4	2	val="getXHSToken"
+61	1	3245	LOAD_LOCAL	17	3	val=[vm#35]
+62	1	3248	STORE_PROPERTY_BY_STRING	#4	1	key="getXHSToken"
+63	1	3251	LOAD_LOCAL	18	1	val={...}
+64	1	3254	LOAD_STRING	#5	2	val="getMnsToken"
+65	1	3257	LOAD_LOCAL	5	3	val=[vm#26]
+66	1	3260	STORE_PROPERTY_BY_STRING	#5	1	key="getMnsToken"
+67	1	3263	LOAD_LOCAL	18	1	val={...}
+68	1	3266	LOAD_STRING	#6	2	val="result"
+69	1	3269	PUSH_UNDEFINED		3	
+70	1	3270	STORE_PROPERTY_BY_STRING	#6	1	key="result"
+71	1	3273	LOAD_LOCAL	18	1	val={...}
+72	1	3276	LOAD_STRING	#7	2	val="hval"
+73	1	3279	PUSH_UNDEFINED		3	
+74	1	3280	STORE_PROPERTY_BY_STRING	#7	1	key="hval"
+75	1	3283	LOAD_STRING	#8	1	val="example-unique-identifier-12345-abcdef"
+76	1	3286	LOAD_LOCAL	18	2	val={...}
+77	1	3289	STORE_PROPERTY_BY_STRING	#8	1	key="example-unique-identifier-12345-abcdef"
+78	1	3292	LOAD_LOCAL	18	1	val={...}
+79	1	3295	LOAD_STRING	#9	2	val="mns"
+80	1	3298	LOAD_OBJECT		2	
+81	1	3299	LOAD_STRING	#4	3	val="getXHSToken"
+82	1	3302	LOAD_LOCAL	17	4	val=[vm#35]
+83	1	3305	STORE_PROPERTY_BY_STRING	#4	3	key="getXHSToken"
+84	1	3308	LOAD_STRING	#5	3	val="getMnsToken"
+85	1	3311	LOAD_LOCAL	5	4	val=[vm#26]
+86	1	3314	STORE_PROPERTY_BY_STRING	#5	3	key="getMnsToken"
+87	1	3317	STORE_PROPERTY_BY_STRING	#9	1	key="mns"
+88	1	3320	LOAD_LOCAL	18	1	val={...}
+```
+
+## Explanation
+
+This trace shows the start of VM execution where:
+
+1. The VM creates multiple nested functions, storing them in the callFrame
+2. Sets up a global object structure
+3. Assigns methods to that object structure
+4. Prepares to execute the token generation logic
+
+Each line in the trace has the format:
+```
+[Instruction #] [Call Depth] [PC] [Opcode] [Operand] [Stack Pointer] [Additional Info]
+```
+
+The execution continues with creating hash functions, time-based values, and eventually constructing the final authentication token by combining these components.
